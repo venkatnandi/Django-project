@@ -39,7 +39,6 @@ async def list_users(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # ✅ STEP 5: Start the bot
 def main():
-    TOKEN = "8086532714:AAFUlZ8C-RHKpPoaN8v5ORX22FYiSGM7M2w"
     app = ApplicationBuilder().token(TOKEN).build()
 
     app.add_handler(CommandHandler("start", start))
